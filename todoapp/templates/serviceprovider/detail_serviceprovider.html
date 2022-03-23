@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block container %}
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Service-provicer Details #{{ serviceprovider.id }}</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    Service -Provider Name
+                </dt>
+                <dt class="col-sm-9">
+                    {{ serviceproviders.name }}
+                </dt>
+                <dt class="col-sm-3">
+                    serviceprovider Description
+                </dt>
+                <dt class="col-sm-9">
+                    {{ serviceproviders.description }}
+                </dt>
+                <dt class="col-sm-3">
+                    Serviceprovider email
+                </dt>
+                <dt class="col-sm-9">
+                    {{ serviceproviders.email }}
+                </dt>
+            </dl>
+        </div>
+    </div>
+{% endblock %}
